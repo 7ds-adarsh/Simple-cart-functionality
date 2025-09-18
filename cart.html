@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <span class="logo" onclick="gotoHome()">Logo</span>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="buttons">
+            <button class="btn">
+                Github
+            </button>
+            <button onclick="gotoCart()" class="btn cart">
+                <img src="cart.svg" alt="cart">
+            </button>
+            <button class="btn hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Cart</h1>
+        <p>You have <span id="cart-count">0</span> items in your cart</p>
+        <button class="btn" onclick="gotoHome()">Browse</button>
+        <div id="cart-items"></div>
+        <h2 id="cart-total"></h2>
+    </main>
+
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

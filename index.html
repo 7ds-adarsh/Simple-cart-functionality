@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple E commerce Website</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <span class="logo" onclick="gotoHome()">Logo</span>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="buttons">
+            <button class="btn">
+                Github
+            </button>
+            <button onclick="gotoCart()" class="btn cart">
+                <img src="cart.svg" alt="cart">
+            </button>
+            <button class="btn hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <h1>Simple E-commerce Website</h1>
+        <div id="products" class="grid-container">
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
