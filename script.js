@@ -45,6 +45,10 @@ function gotoHome() {
     window.location.href = 'index.html';
 }
 
+function gotoGithub() {
+    window.location.href = 'https://github.com/7ds-adarsh';
+}
+
 // add to cart function
 function addToCart(product) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
